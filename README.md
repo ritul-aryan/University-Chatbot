@@ -55,26 +55,38 @@ An open-source, full-stack Retrieval-Augmented Generation (RAG) assistant design
 ### Installation & Setup
 
 1. **Clone the repository:**
-   git clone https://github.com/ritul-aryan/University-Chatbot.git
-   cd University-Chatbot
+   ```bash
+   git clone [https://github.com/ritul-aryan/University-Chatbot.git](https://github.com/ritul-aryan/University-Chatbot.git)
+   cd University-Chatbot/"University ChatBot"
+   ```
 
 2. **Backend Setup:**
+   ```bash
    cd backend
    pip install -r requirements.txt
+   ```
    
-   *Create a .env file in the backend directory and add your API key:*
+   *Create a `.env` file in the `backend` directory and add your API key:*
+   ```env
    GOOGLE_API_KEY=your_gemini_key_here
+   ```
    
-   *Ingest the PDF knowledge base (Ensure PDFs are in the /data folder)*
+   *Ingest the PDF knowledge base (Ensure PDFs are in the /data folder):*
+   ```bash
    python ingest.py
+   ```
    
-   *Start the backend server*
+   *Start the backend server:*
+   ```bash
    python main.py
+   ```
 
 3. **Frontend Setup:**
+   ```bash
    cd ../web
    npm install
    npm run dev
+   ```
 
 ## 🌐 Deployment
 The frontend is optimized for deployment on platforms like Vercel. Ensure your build commands point to the `web` directory and your environment variables are configured in your hosting dashboard to communicate with your hosted Python backend.
