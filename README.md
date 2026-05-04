@@ -56,7 +56,7 @@ An open-source, full-stack Retrieval-Augmented Generation (RAG) assistant design
 
 1. **Clone the repository:**
    git clone https://github.com/ritul-aryan/University-Chatbot.git
-   cd university-chatbot-v2
+   cd University-Chatbot
 
 2. **Backend Setup:**
    cd backend
